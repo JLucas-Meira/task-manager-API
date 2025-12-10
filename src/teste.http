@@ -1,14 +1,2 @@
-### Criar Tarefa (POST)
-POST http://localhost:8080/tarefas
-Content-Type: application/json
-
-{
-  "titulo": "Testando pelo IntelliJ",
-  "descricao": "Adeus Postman travado",
-  "finalizado": false
-}
-
-###
-
-### Listar Tarefas (GET)
+### Teste Simples
 GET http://localhost:8080/tarefas

@@ -2,12 +2,12 @@ package com.jlucas.todolist.entity;
 
 import jakarta.persistence.*;
 
-@Entity // 1. Diz para o Spring: "Isso aqui vira uma tabela no banco"
-@Table(name = "tb_tarefas") // 2. Dá um nome específico pra tabela
+@Entity // Diz para o Spring: "Isso aqui vira uma tabela no banco"
+@Table(name = "tb_tarefas")
 public class Tarefa {
 
-    @Id // 3. Este atributo é a Chave Primária (PK)
-    @GeneratedValue(strategy = GenerationType.IDENTITY) // 4. Diz pro banco gerar o ID automático (1, 2, 3...)
+    @Id // Este atributo é a Chave Primária (PK)
+    @GeneratedValue(strategy = GenerationType.IDENTITY) // Diz pro banco gerar o ID automático (1, 2, 3...)
     private Long id;
 
     private String titulo;
